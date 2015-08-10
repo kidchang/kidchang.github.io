@@ -42,3 +42,6 @@ gem 'unicorn-rails'
 # https://github.com/ai/autoprefixer-rails
 gem 'autoprefixer-rails'
 gem 'rake'
+group :production, :staging do
+  gem 'rails_12factor'
+end
